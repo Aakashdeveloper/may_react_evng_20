@@ -1,0 +1,19 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "thiss is about learn package",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "react"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "redux": "^4.0.5"
+  }
+}
