@@ -132,3 +132,13 @@ Step to create React App
 ///
 Basic Javascript
 folder walkthrough
+
+
+
+ReadMe > Information about the application
+package.json > start, description packages depedency management
+.gitignore > thing we dont want to push to git
+
+
+/////
+How to make first component in react
