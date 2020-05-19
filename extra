@@ -142,3 +142,17 @@ package.json > start, description packages depedency management
 
 /////
 How to make first component in react
+
+
+scr > index.js
+public > index.html
+
+> npm start > "start": "react-scripts start" > src/index.js
+                ||
+                \/
+Bundle.js (combination of html+javascript)
+               ||
+               \/
+         public/index.html
+
+
