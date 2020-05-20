@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+import Header from './component/Header';
+import Footer from './component/Footer';
 
 const App = () =>{
     return(
-        <div>
+        <React.Fragment>
             <Header/>
-            <h1>React App With NareshiT</h1>
-            <h2>My First App</h2>
-        </div>
+            <div className="page">
+                <h1>React App With NareshiT</h1>
+                <h2>My First App</h2>
+            </div>
+            <Footer/>
+        </React.Fragment>
     )
 }
 

@@ -141,7 +141,8 @@ package.json > start, description packages depedency management
 
 
 /////
-How to make first component in react
+Classes In JavaScript
+class component
 
 
 scr > index.js
@@ -156,3 +157,6 @@ Bundle.js (combination of html+javascript)
          public/index.html
 
 
+tagname
+classname
+id

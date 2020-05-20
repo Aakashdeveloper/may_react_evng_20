@@ -92,4 +92,30 @@ cannot state      can maintain state
 Display           logical
 
 
+//Es5
+function language(name,country){
+    this.name = name
+    this.country = country
+}
 
+ProtoType
+var Hindi = new language('Hindi',"India")
+
+//Es6
+class geo{
+    constructor(lat,long){
+        this.lat = lat
+        this.long = long  
+    }
+}
+
+
+class language1 extends geo{
+    constructor(name,country,lat,long){
+        super(lat,long)
+        this.name = name
+        this.country = country 
+    }
+}
+
+var English = new language1('English',"USA")
