@@ -11,7 +11,7 @@ const App = () =>{
                 <h1>React App With NareshiT</h1>
                 <h2>My First App</h2>
             </div>
-            <Footer/>
+            <Footer year={"2020"} month={"May"}/>
         </React.Fragment>
     )
 }

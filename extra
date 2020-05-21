@@ -160,3 +160,27 @@ Bundle.js (combination of html+javascript)
 tagname
 classname
 id
+
+
+//////********//////
+State Props
+state act like local variable
+Props > help to transfer data between component
+
+Component A    ====>      Component B
+State          Props      State
+
+ClassComponent   ==================>  Functional Component
+State            pass state as props     props
+
+onclick
+onblur
+onchange
+oninput
+onsubmit
+onkeypress
+
+
+ternory operator
+map    > map in javascript
+filter > filter in javascript
