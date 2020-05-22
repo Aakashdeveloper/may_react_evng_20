@@ -182,5 +182,44 @@ onkeypress
 
 
 ternory operator
-map    > map in javascript
-filter > filter in javascript
+map    > map in javascript  > Help to iterate over data
+filter > filter in javascript >  return only those value for which condition is true
+
+var city = ['london','newyork','delhi','mumbai']
+undefined
+city.map((data)=>{return data})
+(4) ["london", "newyork", "delhi", "mumbai"]
+var city = [33,6,754,33,5]
+undefined
+city.map((data)=>{return data*100})
+(5) [3300, 600, 75400, 3300, 500]
+city.map((data)=>{console.log(data*100)})
+VM207:1 3300
+VM207:1 600
+VM207:1 75400
+VM207:1 3300
+VM207:1 500
+
+
+var age = [44,5,10,56,13,24,32,61]
+age.filter((data)=> {return data>25})
+[44, 56, 32, 61]
+city.map((data,index)=>{return data+index})
+(5) [33, 7, 756, 36, 9]
+city.map((data,index)=>{console.log(index)})
+VM300:1 0
+VM300:1 1
+VM300:1 2
+VM300:1 3
+VM300:1 4
+
+var age = [44,5,10,56,13,24,32,61]
+age.map((data)=> {return data>25})
+(8) [true, false, false, true, false, false, true, true]
+
+
+var a = [0,1,2,3]
+a.map((data) => {return data*2})
+(4) [0, 2, 4, 6]
+a.filter((data) => {return data*2})
+(3) [1, 2, 3]
