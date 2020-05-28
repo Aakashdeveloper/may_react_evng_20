@@ -226,3 +226,10 @@ a.filter((data) => {return data*2})
 
 > react-router-dom
 > { BrowserRouter, Routes}
+
+
+///////Dummy API//////////
+> npm i -g json-server
+> json-server --watch db.json --port 8900
+
+https://developerfunnel.herokuapp.com/restaurants
