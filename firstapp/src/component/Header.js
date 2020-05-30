@@ -7,7 +7,7 @@ class Header extends Component{
        super()
 
        this.state={
-           title:'React First App',
+           title:'Edureka Webinar',
            keyword:'User Text Here'
        }
 
@@ -25,10 +25,7 @@ class Header extends Component{
             <Fragment>
                 <header>
                     <p className="logo">{this.state.title}</p>
-                    <center>
-                        <input onChange={this.handleChange}/>
-                        <p>{this.state.keyword}</p>
-                    </center>
+                   
                     <hr/>
                 </header>
             </Fragment>
