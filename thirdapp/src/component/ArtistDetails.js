@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Header from './Header';
 import axios from 'axios';
+import Albums from './Albums';
 
 const url = 'http://localhost:8900/artists/'
 
@@ -18,7 +18,6 @@ class ArtistDetails extends Component {
         var {details} = this.state;
         return(
             <div>
-                <Header/>
                 <div className="artist_bio">
                     <div className="artist_image">
                         <span style={{background:`url('/images/covers/${details.cover}.jpg')`}}>
@@ -30,6 +29,7 @@ class ArtistDetails extends Component {
                         <div classNamee="bio_text">
                             {details.bio}
                         </div>
+                        <Albums albumdata={details.albums}/>
                     </div>
                 </div>
             </div>
