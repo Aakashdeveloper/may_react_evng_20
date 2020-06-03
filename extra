@@ -234,3 +234,11 @@ a.filter((data) => {return data*2})
 > json-server --watch db.json --port 8900
 
 https://developerfunnel.herokuapp.com/restaurants
+
+
+////////////
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/NIT.git
+git push -u origin master
