@@ -1,5 +1,4 @@
-{
-    "news":[
+[
     {
         "id":187,
         "title":"This is react session",
@@ -116,6 +115,5 @@
     }
 
 ]
-}
 
 
