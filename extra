@@ -258,3 +258,5 @@ Redux
 > Avoid Rewrite
 > Share data in non nested Component
 
+
+npm i redux react-redux redux-promise react-router-dom react-slick
