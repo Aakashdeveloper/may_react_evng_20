@@ -12,8 +12,8 @@ Npm
 
 React = 3
 React_hooks -1
----------------------
 React-Redux =2
+---------------------
 React-Saga -1
 React-GarphQL 1
 React-JWT(Login Logut)-1
@@ -260,3 +260,5 @@ Redux
 
 
 npm i redux react-redux redux-promise react-router-dom react-slick
+
+npm i prop-types
