@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
  
+const loginurl = "http://localhost:5000/api/auth/login";
 class LoginComponent extends Component{
     constructor(){
         super()
@@ -17,7 +18,24 @@ class LoginComponent extends Component{
         this.setState({password:event.target.value})
     }
     handleSubmit =(event) => {
-        
+        var data ={
+            "email":this.state.email,
+            "password":this.state.password
+        }
+
+        fetch(loginurl,{
+            method:'POST',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(data)
+        })
+        .then((res) => res.json()) 
+        .then((data)=>{
+            sessionStorage.setItem('_ltk',data.token)
+            this.props.history.push('/profile')
+        })
     }
     render(){
         return(

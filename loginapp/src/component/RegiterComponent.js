@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 
+const registerUrl = "http://localhost:5000/api/auth/register"
 class RegisterComponent extends Component {
     constructor(){
         super()
@@ -21,7 +22,21 @@ class RegisterComponent extends Component {
         this.setState({password:event.target.value})
     }
     handleSubmit =(event) => {
-        
+        var data ={
+            "name":this.state.name,
+            "email":this.state.email,
+            "password":this.state.password
+        }
+
+        fetch(registerUrl,{
+            method:'POST',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(data)
+        })
+        .then(this.props.history.push('/login'))
     }
     render(){
         return(

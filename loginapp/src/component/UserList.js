@@ -1,11 +1,35 @@
-import React from 'react'
+import React,{Component} from 'react';
+import UserDisplay from './UserDisplay';
 
-const UserList  = () => {
-    return(
-        <div>
-            <h1>UserList</h1>
-        </div>
-    )
+const url = "http://localhost:5000/api/auth/users";
+
+class UserList extends Component {
+    constructor(){
+        super()
+
+        this.state={
+            users:''
+        }
+    }
+
+    render(){
+        return(
+            <div>
+               <UserDisplay userData={this.state.users}/>
+            </div>
+        )
+    }
+
+    componentWillMount(){
+        fetch(url,{Method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({
+                users:data
+            })
+        })
+    }
+    
 }
 
 export default UserList;
