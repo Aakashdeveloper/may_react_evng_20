@@ -13,16 +13,16 @@ Npm
 React = 3
 React_hooks -1
 React-Redux =2
----------------------
 React-JWT(Login Logut)-1
-React-Saga -1
 React-GarphQL 1
+-> MERN
+---------------------
+React-Saga -1
 Basic React Native=1
 ----------------------
 Testing
 
 Depolyment
--> MERN
 -> Docker
 -> Nginx
 
@@ -281,3 +281,7 @@ npm i prop-types
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 (response) => {userinfo}
+
+
+/////////////////
+npm i graphql apollo-boost graphql-tag react-apollo
