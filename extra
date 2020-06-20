@@ -15,16 +15,16 @@ React_hooks -1
 React-Redux =2
 React-JWT(Login Logut)-1
 React-GarphQL 1
--> MERN
----------------------
 React-Saga -1
-Basic React Native=1
-----------------------
 Testing
-
 Depolyment
+-> MERN
 -> Docker
 -> Nginx
+---------------------
+Basic React Native=1
+----------------------
+
 
 Mock API
 json-server
@@ -285,3 +285,19 @@ npm i prop-types
 
 /////////////////
 npm i graphql apollo-boost graphql-tag react-apollo
+
+ npm i enzyme enzyme-adapter--react-16 react-test-renderer react-addons-test-utils
+
+
+  server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+
+docker build . -t myreact
