@@ -301,6 +301,7 @@ npm i graphql apollo-boost graphql-tag react-apollo
 
 
 docker build . -t myreact
+<<<<<<< HEAD
 
 
 ///
@@ -308,3 +309,5 @@ ReactNtaive
 ////
 npm i -g create-react-native-app
 create-react-native-app mymobi
+=======
+>>>>>>> aa9bc30b9ff374dacece871d56726266c35540c7
