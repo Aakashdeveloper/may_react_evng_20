@@ -301,3 +301,10 @@ npm i graphql apollo-boost graphql-tag react-apollo
 
 
 docker build . -t myreact
+
+
+///
+ReactNtaive
+////
+npm i -g create-react-native-app
+create-react-native-app mymobi
